@@ -3,8 +3,8 @@
  * @param text - The input string
  * @returns The same string that was passed as input
  */
-export function HelloWord(text: boolean, name: string): string | boolean {
-  return text ? `Hello ${name}` : false;
+export function HelloWord(text: boolean, name: string): boolean {
+  return text ? true : false;
 }
 
 export function NewFunction(options: { text: boolean; name: string }): string {
