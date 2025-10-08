@@ -3,8 +3,12 @@
  * @param text - The input string
  * @returns The same string that was passed as input
  */
-export function HelloWord(text: boolean, name: string): string {
-  return text ? `Hello ${name}` : `Goodbye ${name}`;
+export function HelloWord(text: boolean, name: string): string | boolean {
+  return text ? `Hello ${name}` : false;
+}
+
+export function NewFunction(options: { text: boolean; name: string }): string {
+  return options.text ? `Hello ${options.name}` : `Goodbye ${options.name}`;
 }
 
 function functionWithoutExport() {
